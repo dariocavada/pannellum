@@ -895,7 +895,7 @@ function onDocumentMouseMove(event) {
  */
 function onDocumentMouseUp(event) {
     if (draggingHotSpot && draggingHotSpot.dragHandlerFunc)
-        draggingHotSpot.dragHandlerFunc(event, draggingHotSpot.dragHandlerArgs);
+        draggingHotSpot.dragHandlerFunc(event, draggingHotSpot.dragHandlerArgs, draggingHotSpot);
     draggingHotSpot = null;
 
     if (!isUserInteracting) {
